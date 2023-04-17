@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Users data</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	</head>
+	<body>
+		<table style="width:100%">
+			<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>PESEL</th>
+			<th>Date of birth</th>
+			</tr>
+			{%for user in data%}
+			<tr>
+				<td>{{user[0]}}</td>
+				<td>{{user[1]}}</td>
+				<td>{{user[2]}}</td>
+				<td>{{user[3]}}</td>
+				</tr>
+			{%endfor%}
+		</table>		
+	</body>
+</html>

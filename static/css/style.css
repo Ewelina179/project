@@ -1,0 +1,49 @@
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+
+body {
+  display:flex;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"]{
+  width:100%;
+  padding:20px;
+  margin:10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  display:block;
+  border-radius: 25px;
+}
+  
+label {
+  margin-bottom: 0.4rem;
+  text-align: center;
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+.button {
+  display: block;
+  margin: 0 30px;
+  background-color:grey;
+  padding: 20px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 25px;
+}
+ 
+
+table, th, td {
+  border:0.5px solid grey;
+  }
